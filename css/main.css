@@ -7,23 +7,28 @@ body {
 .container {
     width:100%;
     position:absolute;
-    z-index:-1;
+    z-index:0;
     height: 320px;
-    top: 0;
+    /*top: 0;
     bottom: 0;
     margin: auto;
-
+    */
 }
-
 .box {
-	   display: none;
+	   /*display: none;*/
     margin:0 auto;
+    width:190px;
+    height: 140px;
+    float: left;
+    background-color: red;
+    margin: 10px;
 }
 
 	img {
 	display:inline-block;
-	width: 20%;
-	height: 20%;
+	width: 100%;
+	height: 100%;
+
 
 }
 
@@ -39,25 +44,101 @@ body {
     left: 0;
   
     overflow: hidden;
+    background-image: url("../img/dog.jpeg");
     
 
 }
 
+.sq {
+    width:190px;
+    height: 140px;
+    float: left;
+    margin:10px;
+    position: relative;
+}
 
-.squar{
-	width: 50px;
-	height: 50px;
-	float: left;
+.squar1{
 	background-color: #ff00ff;
+}
+.squar2{
+    background-color: #ff7f50;
 
 }
+.squar3{
+    background-color: #7fff00;
 
-.pink {
+}
+.squar4{
+    background-color: #8B0000;
+
+}
+.squar5{
+    background-color: #ff00ff;
+
+}
+.squar6{
+    background-color: #8FBC8F;
+
+
+}
+.squar7{
+    background-color: #8A2BE2;
+
+}
+.squar8{
+    background-color: #008000;
+}
+.squar9{
+    background-color: #B22222;
+}
+
+
+.squar10{
+    background-color: #ff7f50;
+}
+
+
+.squar11{
+    background-color: #191970;
+}
+
+
+.squar12{
+    background-color: #FF4500;
+}
+ h1{
+    color:green;
+    font-family:courier;
+    font-size:400%;
+    position:absolute;
+    left: 20%;
+    top: 0%;
+}
+h2{
+    color:black;
+    font-family:courier;
+    font-size:300%;
+    position:absolute;
+    left: 40%;
+    top: 80%;
+}
+    
+h3{
+    color:black;
+    font-family:courier;
+    font-size:300%;
+    position:absolute;
+    left: 40%;
+    top: 85%;
+    
+    
+}
+/*.pink {
 	width: 50px;
 	height: 50px;
 }
 
-
+*/
 
 
 
