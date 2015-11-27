@@ -2,6 +2,7 @@ body {
 
 	overflow: hidden;
 
+
 	}
 
 .container {
@@ -27,6 +28,9 @@ body {
 
 }
 
-.squar {
-	background-color: FF69B4;
+.squars {
+	background-color: #FF69B4;                                            
+	/*background-color:black;*/
 }
+/*ul { padding: 0;  margin: 0;}*/
+
