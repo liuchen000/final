@@ -1,21 +1,79 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
 body {
 
-	overflow: hidden;
+    overflow: hidden;
 
-	}
+    }
 
 .container {
     width:100%;
     position:absolute;
     z-index:0;
     height: 320px;
-    /*top: 0;
+    top: 0;
     bottom: 0;
     margin: auto;
-    */
+    
 }
 .box {
-	   /*display: none;*/
+       
     margin:0 auto;
     width:190px;
     height: 140px;
@@ -24,17 +82,17 @@ body {
     margin: 10px;
 }
 
-	img {
-	display:inline-block;
-	width: 100%;
-	height: 100%;
+    img {
+    display:inline-block;
+    width: 100%;
+    height: 100%;
 
 
 }
 
-.squars {
-	background-color:blue;
-	 width: 40em;
+.container {
+    background-color:blue;
+     width: 40em;
     height: 40em;
     margin: auto;
     position: absolute;
@@ -52,59 +110,75 @@ body {
 .sq {
     width:190px;
     height: 140px;
+        margin:10px;
+    position: absolute;
     float: left;
-    margin:10px;
-    position: relative;
+
 }
 
 .squar1{
-	background-color: #ff00ff;
+    background-color: #ff00ff;
+
 }
 .squar2{
     background-color: #ff7f50;
+    top: 33%;
 
 }
 .squar3{
     background-color: #7fff00;
-
+        top: 66%;
 }
 .squar4{
     background-color: #8B0000;
-
+    top: 99%;
 }
 .squar5{
     background-color: #ff00ff;
-
+    top: 0%;
+    left: 66%;
 }
 .squar6{
     background-color: #8FBC8F;
-
+    top: 33%;
+    left: 132%;
 
 }
 .squar7{
     background-color: #8A2BE2;
-
+ top: 0%;
+    left: 132%;
 }
 .squar8{
     background-color: #008000;
+     top: 99%;
+    left: 132%;
 }
 .squar9{
     background-color: #B22222;
+     top: 66%;
+    left: 66%;
 }
 
 
 .squar10{
     background-color: #ff7f50;
+     top: 99%;
+    left: 66%;
 }
 
 
 .squar11{
     background-color: #191970;
+      top: 66%;
+    left: 132%;
 }
 
 
 .squar12{
     background-color: #FF4500;
+     top: 33%;
+    left: 66%;
 }
  h1{
     color:green;
@@ -134,14 +208,90 @@ h3{
     
 }
 
-* entire container, keeps perspective */
-.flip-container {
+
+#c1 {
+    position: absolute;
+    top: 99%;
+    left:132%;
+}
+#c2 {
+   position: absolute;
+    top: 33%;
+    left:66%;
+}
+
+#a61 {
+    position: absolute;
+    top: 0%;
+    left:132%;
+}
+
+#b61 {
+    position: absolute;
+    top: 99%;
+    
+}
+
+#jin {
+    position: absolute;
+    top: 66%;
+    
+}
+
+#j2n {
+    position: absolute;
+    top: 0%;
+    left: 66%;
+    
+}
+
+#b1 {
+    position: absolute;
+
+    
+}
+
+#b2 {
+    position: absolute;
+    top: 66%;
+    left: 132%;
+    
+}
+#u2 {
+    position: absolute;
+    top: 33%;
+    left: 132%;
+
+}
+
+#u1 {
+    position: absolute;
+    top: 66%;
+    left: 66%;
+
+}
+
+#ja1 {
+    position: absolute;
+    top: 33%;
+    left: 0%;
+
+}
+#ja2 {
+    position: absolute;
+    top: 99%;
+    left: 66%;
+
+}
+
+/* entire container, keeps perspective */
+/*/*.flip-container {
     perspective: 1000;
 }
     /* flip the pane when hovered */
-    .flip-container:click .flipper, .flip-container.hover .flipper {
+  /*  .flip-container:click .flipper, .flip-container.click .flipper {
         transform: rotateY(180deg);
-    }
+    }*/
 
 .flip-container, .front, .back {
     width: 320px;
@@ -149,12 +299,12 @@ h3{
 }
 
 /* flip speed goes here */
-.flipper {
+/*.flipper {
     transition: 0.6s;
     transform-style: preserve-3d;
 
     position: relative;
-}
+}*/
 
 /* hide back of pane during swap */
 .front, .back {
@@ -165,24 +315,172 @@ h3{
     left: 0;
 }
 
-/* front pane, placed above back */
+
 .front {
     z-index: 2;
-    /* for firefox 31 */
+  
     transform: rotateY(0deg);
 }
 
-/* back, initially hidden pane */
-.back {
+
+/*.back {
     transform: rotateY(180deg);
-}
-/*.pink {
-	width: 50px;
-	height: 50px;
+
+
 }
 
-*/
+.flip-container:hover .flipper, .flip-container.hover .flipper, .flip-container.flip .flipper {
+    transform: rotateY(180deg);
+}*/
+
+@media (min-width: 480px) {
+    .simon {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 600px) {
+    .simon {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 800px) {
+    .simon {
+        font-size: 18px;
+    }
+}
 
 
 
 
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
