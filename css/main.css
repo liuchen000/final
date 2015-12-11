@@ -80,6 +80,7 @@ body {
     float: left;
     background-color: red;
     margin: 10px;
+    position: relative;
 }
 
     img {
@@ -110,12 +111,13 @@ body {
 .sq {
     width:190px;
     height: 140px;
-        margin:10px;
     position: absolute;
     float: left;
-
+background-color: #ff00ff;
+top:0;
+left:0;
 }
-
+/*
 .squar1{
     background-color: #ff00ff;
 
@@ -179,13 +181,13 @@ body {
     background-color: #FF4500;
      top: 33%;
     left: 66%;
-}
+}*/
  h1{
     color:green;
     font-family:courier;
     font-size:400%;
     position:absolute;
-    left: 20%;
+    left: 22%;
     top: 0%;
 }
 h2{
@@ -193,7 +195,7 @@ h2{
     font-family:courier;
     font-size:300%;
     position:absolute;
-    left: 40%;
+    left: 45%;
     top: 80%;
 }
     
@@ -202,11 +204,20 @@ h3{
     font-family:courier;
     font-size:300%;
     position:absolute;
-    left: 40%;
+    left: 44%;
     top: 85%;
     
     
 }
+p{
+    color:black;
+    font-family:courier;
+    font-size:300%;
+    position:absolute;
+    left: 45%;
+    top: 80%;
+}
+
 
 
 #c1 {
